@@ -42,4 +42,4 @@ Step 7 - Place the file that you intent to train the chatgpt in the data folder
 
 Step 8 - From the command line use 'python chatbot.py' to run the training and the bot and ask with end up in USER: prompt and the user can ask question based on the trained data.
 
-Step 9 (optional) - If you want to enable PDF support you only need to add one line to this code. Just add 'import PyPDF2' at the top with the rest of the import statements (of couse you need to 'pip install PyPDF2' for this to work). As this code uses SimpleDirectoryReader that means that it will read every .txt and, if you add import PyPDF2, every PDF in the /data folder. It will vectorise all of them in order to create your .json file. So if you don't want old training data to be added into your .json file when it is being created then move it out of the /data dir and put it somewhere else. Only files that you want to be part of your .json file should be in the data folder.
+Step 9 (optional) - If you want to enable PDF support, install PyPDF2. 
