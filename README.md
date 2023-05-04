@@ -35,7 +35,9 @@ Step 4 - Then do the following installations:
 
 
 Step 5 - edit api key and  put your own api key there. Register an account at openai.com if you don't have one.
+
 Step 6 - Create a data folder in the current working directory
+
 Step 7 - Place the file that you intent to train the chatgpt in the data folder
 
 Step 8 - From the command line use 'python chatbot.py' to run the training and the bot and ask with end up in USER: prompt and the user can ask question based on the trained data.
