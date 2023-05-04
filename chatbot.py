@@ -1,33 +1,25 @@
-from gpt_index import SimpleDirectoryReader, GPTListIndex, GPTSimpleVectorIndex, LLMPredictor, PromptHelper
-from langchain import OpenAI
 import sys
 import os
 import PyPDF2
-
-def open_file(filepath):
-    with open(filepath, 'r', encoding='utf-8') as infile:
-        return infile.read()
+from langchain import OpenAI
+from gpt_index import SimpleDirectoryReader, GPTListIndex, GPTSimpleVectorIndex, LLMPredictor, PromptHelper
         
 os.environ["OPENAI_API_KEY"] = "Your-Openai-Key"
 
-def construct_index(directory_path):
-  # set maximum input size
-  max_input_size = 4096
-  # set number of output tokens
+def index_creation(dir_path):
+  maximum_input_size = 4096
   num_outputs = 256
-  # set maximum chunk overlap
-  max_chunk_overlap = 20
-  # set chunk size limit
+  maximum_chunk_overlap = 20
   chunk_size_limit = 600
-  prompt_helper = PromptHelper(max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
-  # define LLM
-  llm_predictor = LLMPredictor(llm=OpenAI(temperature=0, model_name="text-davinci-003", max_tokens=num_outputs))
-  documents = SimpleDirectoryReader(directory_path).load_data()
-  index = GPTSimpleVectorIndex(documents, llm_predictor=llm_predictor, prompt_helper=prompt_helper)
+  prompt_helper = PromptHelper(maximum_input_size, num_outputs, maximum_chunk_overlap, chunk_size_limit=chunk_size_limit)
+  
+  predictor_llm = LLMPredictor(llm=OpenAI(temperature=0, model_name="text-davinci-003", max_tokens=num_outputs))
+  documents = SimpleDirectoryReader(dir_path).load_data()
+  index = GPTSimpleVectorIndex(documents, llm_predictor=predictor_llm, prompt_helper=prompt_helper)
   index.save_to_disk('index.json')
   return index
   
-def ask_bot(input_index = 'index.json'):
+def chat_bot(input_index = 'index.json'):
   index = GPTSimpleVectorIndex.load_from_disk(input_index)
   while True:
     query = input('User: \n')
@@ -35,6 +27,6 @@ def ask_bot(input_index = 'index.json'):
     print ("\nJJ: " + response.response + "\n")
 
 if __name__ == '__main__':
-    index = construct_index("data/")
-    ask_bot('index.json')
+    index = index_creation("data/")
+    chat_bot('index.json')
 
