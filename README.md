@@ -7,6 +7,7 @@ How to use
 Step 1 - Initially spin up an aws ec2 instance , preferably a ubuntu machine
 
 Step 2 - Run the following commands:
+
         1  sudo apt update
         2  sudo apt install build-essential libssl-dev libffi-dev zlib1g-dev
         3  wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz
@@ -26,6 +27,7 @@ Step 3 - Then create virtual environment:
      source my_env/bin/activate
 
 Step 4 - Then do the following installations:
+
      pip install langchain==0.0.118
 
      pip install gpt_index==0.4.24
