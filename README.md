@@ -7,15 +7,15 @@ How to use
 Step 1 - Initially spin up an aws ec2 instance , preferably a ubuntu machine
 
 Step 2 - Run the following commands:
-    1  sudo apt update
-    2  sudo apt install build-essential libssl-dev libffi-dev zlib1g-dev
-    3  wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz
-    4  tar xzf Python-3.9.4.tgz
-    5  cd Python-3.9.4
-    6  ./configure --enable-optimizations
-    7  make -j $(nproc)
-    8  sudo make altinstall
-    9  python3.9 --version
+        1  sudo apt update
+        2  sudo apt install build-essential libssl-dev libffi-dev zlib1g-dev
+        3  wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz
+        4  tar xzf Python-3.9.4.tgz
+        5  cd Python-3.9.4
+        6  ./configure --enable-optimizations
+        7  make -j $(nproc)
+        8  sudo make altinstall
+        9  python3.9 --version
 
 Step 3 - Then create virtual environment:
 
