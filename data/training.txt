@@ -1,0 +1,61 @@
+In Western markets most of the investment money of the population flows into Financial Instruments
+Financial Instruments - Shares, Bonds, Commodities, Forex, Index Points, Future’s etc.
+Trading is automated by Software called Algorithmic Trading Software
+
+
+Presently Algorithmic Trading & HFT handled by Conventional Rule Based Software
+In the event of an upward or downward movement in the market all the software execute the same action leading to market instability
+One of the contributors  for 2008 Economic Crisis 
+
+
+INATA: Intelligent Algorithmic Trading Assistant
+
+A software which does Financial Trading Intelligently like Humans, that’s it !... 
+
+Here we intend to improvise traditional trading software's with AI capability such that they would be able to operate both independently (without human support) as well as intelligently by learning from domain related data
+
+problem - Presently Algorithmic Trading is handled by Rule Based Software, which are ineffective
+These Systems  have two major disadvantages,
+Don't have Learning Capability 
+Inability to handle Unstructured Data from Qualitative Sources (News Feeds, Expert Blogs, Social Media etc.)
+
+Solution - Adding an AI Layer consisting of,
+
+Deep Learning: Learning Capability
+
+NLP Engine: Handle Unstructured Data
+
+Predictive Model: Decision Making 
+
+
+How is it unique?
+Emulates Human model of Trading – analyzing all sorts of market data & executing by itself at its own pace
+
+
+All present Algo’s & HFT’s operate by the speed game i.e. executing a pre-set rule at high speed’s to generate margin by ‘Arbitrage’
+
+INATA auto-determines the rule by itself by intelligently sensing the market trends to trade and generate margins by ‘Speculation’
+
+Product Feature Set - 
+Feature Set similar to other ‘Trading Portals/Robo-advisors’ in the market
+User can login onto the Web App and move ‘Investment – Cash/Money’ through the Payment Gateway and thus Park Funds on the platform for returns
+Real-time Dashboards exhibiting Data, Influencing Parameters, Decision KPI’s & System Trading Actions.
+
+Product USP
+Fully Automated Trading with no dependency for manual intervention
+Trading Platform with ‘Minimum Assured Returns (5%)’
+Plug & Play Architecture for enabling trading on Multiple Asset Classes
+Ultra-simple UX design which enables users to interact with the app at relative ease.
+
+
+The core design of Sex 1.0 is made of 3 things. Love, self determination and honesty.
+
+The core design of Sex 2.0 is made of 3 things. Fear, control and deception.
+
+The core design of Sex 3.0 is made of 3 things. Love, self determination and honesty.
+
+The Sex 1.0 era is a time period which is the same as the hunter gatherer era of human beings. They are the same.
+
+The Sex 2.0 era is a time period which is the beginning of the agricultural revolution up to and including the present day
+
+The Sex 3.0 era is a time period which is the present day forwards
